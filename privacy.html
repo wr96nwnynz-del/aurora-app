@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – Aurora Morning Miles</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --coral: #F07050; --text: #1C1C1E; --text2: #6C6C70; --surface: #F9F5F1; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background: #fff;
+      line-height: 1.7;
+    }
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(255,255,255,0.88);
+      backdrop-filter: saturate(180%) blur(20px);
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      padding: 0 24px; height: 56px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav-logo { font-size: 18px; font-weight: 700; color: var(--coral); text-decoration: none; }
+    .nav-back { font-size: 14px; font-weight: 500; color: var(--text2); text-decoration: none; }
+    .nav-back:hover { color: var(--coral); }
+
+    .hero-strip {
+      background: linear-gradient(135deg, #FFDFC4, #FFAA7A, #F07050);
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+    .hero-strip h1 { font-size: clamp(28px, 5vw, 40px); font-weight: 800; color: #fff; letter-spacing: -0.6px; }
+    .hero-strip p  { font-size: 14px; color: rgba(255,255,255,0.75); margin-top: 8px; }
+
+    .content { max-width: 720px; margin: 0 auto; padding: 56px 24px 80px; }
+
+    .policy-section { margin-bottom: 40px; }
+    .policy-section h2 {
+      font-size: 18px; font-weight: 700;
+      color: var(--text);
+      margin-bottom: 10px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #FFDFC4;
+    }
+    .policy-section p { font-size: 15px; color: var(--text2); margin-bottom: 12px; }
+    .policy-section p:last-child { margin-bottom: 0; }
+
+    footer {
+      background: #1C1C1E; color: rgba(255,255,255,0.5);
+      padding: 40px 24px; text-align: center;
+    }
+    footer a { color: rgba(255,255,255,0.6); text-decoration: none; margin: 0 12px; font-size: 14px; }
+    footer a:hover { color: #fff; }
+    footer p { font-size: 13px; margin-top: 16px; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/" class="nav-logo">Aurora</a>
+    <a href="index.html" class="nav-back">&larr; Back</a>
+  </nav>
+
+  <div class="hero-strip">
+    <h1>Privacy Policy</h1>
+    <p>Last updated: June 21, 2026</p>
+  </div>
+
+  <div class="content">
+
+    <div class="policy-section">
+      <h2>Information we collect</h2>
+      <p>Aurora – Morning Miles collects information you provide directly in the app, including your display name, email address, profile photo or avatar selection, reminder preferences, subscription goal settings, and any accountability partner information you choose to add.</p>
+      <p>The app also stores activity and usage information needed to provide its core features, such as walk history (including route points, duration, and distance), streak progress, points balance, rewards redemptions, invite codes, linked partner identifiers, sweepstakes entries, and the date and time of app actions related to reminders, subscriptions, and social features.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>Location information</h2>
+      <p>If you grant permission, Aurora – Morning Miles accesses your device's location to record walks, calculate distance, display your route on the map, and support walk-based progress features. Location permission is optional, but some core features will not work without it.</p>
+      <p>When a walk is in progress, the app uses background location tracking so your route continues to be recorded even if you lock your screen or switch to another app. iOS displays a blue status bar indicator when this is active. Background tracking stops automatically when you end your walk.</p>
+      <p>Walk route points and related distance information are stored locally on your device. The app is not designed to publish your route publicly or share it with other users.</p>
+      <p>During a walk, the app also uses your device's proximity sensor to detect whether the phone is in your pocket. This is used solely to award a bonus points multiplier for "pocket walks." The proximity sensor is active only while a walk is in progress and does not transmit any data off your device.</p>
+      <p>The app also detects whether audio is playing through your device when a walk starts, using the system audio session. This is used solely to award a bonus for "silent walks" started without audio playing. No audio content is accessed or recorded.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>How we use information</h2>
+      <p>We use information we collect to operate the app, personalize your experience, maintain your streaks and rewards, schedule reminders, support social accountability features, process subscription-related settings, improve reliability, and protect the security and integrity of the app.</p>
+      <p>We also use aggregated, de-identified usage data to understand how the app is used and to improve its features. This analysis is conducted through our analytics provider (see "Analytics" below).</p>
+      <p>We do not use your information for third-party advertising, and the app does not include third-party advertising SDKs.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>Analytics</h2>
+      <p>Aurora – Morning Miles uses PostHog, a third-party product analytics service, to help us understand how the app is used and to improve the user experience. PostHog receives event data when you use the app, including app opens, onboarding steps completed, walks started and completed, walk duration and distance, whether audio was playing or the phone was pocketed during a walk, time of day, streak length at time of walk, reward redemptions, partner additions, and leaderboard views.</p>
+      <p>To associate events with a single user over time, PostHog uses your CloudKit record identifier as a distinct identifier. It also receives your display name, whether you have an accountability partner, your notification permission status, and your walk reminder settings as profile-level properties used for cohort analysis.</p>
+      <p>PostHog processes this data on servers in the United States. PostHog's privacy policy is available at posthog.com/privacy. We do not use PostHog data for advertising or share it with additional third parties.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>CloudKit, iCloud, and notifications</h2>
+      <p>Certain social and competitive features use Apple's CloudKit and push notification services. If you use invite codes, leaderboard features, accountability notifications, or the sweepstakes, information such as your display name, invite code, CloudKit record identifier, leaderboard entries, missed-walk events, and sweepstakes entry counts may be stored and transmitted through Apple's services to make those features work. Sweepstakes entry records stored in CloudKit include your CloudKit user identifier, the week identifier, and your entry count for that week.</p>
+      <p>When a partner has notifications enabled and you miss a morning walk, the app sends a push notification to that partner. The notification text includes your display name as set in the Social tab. We do not control delivery, storage, or display of notifications on the recipient's device beyond the content we send.</p>
+      <p>If you enable daily walk reminders, Apple delivers those notifications locally on your device. Delivery timing depends on Apple and device settings, and cannot be guaranteed.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>Sharing of information</h2>
+      <p>We do not sell your personal information. We share information only as needed to operate the app: with Apple through its platform services (CloudKit, push notifications, Apple Pay), with PostHog for product analytics as described above, when you intentionally use social or payment-related features, or when disclosure is required by law, legal process, or protection of rights and safety.</p>
+      <p>If you add accountability partners, those users may see limited information about you, such as your display name and accountability-related events, as part of the feature you choose to use.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>Payments</h2>
+      <p>Online payment processing is not yet active. The app currently tracks subscription obligation locally on your device. When payment becomes available, it will be processed via Apple Pay — your card number will not be stored by the app; payment authorization is handled entirely by Apple.</p>
+      <p>Payment-related records stored locally may include subscription amount, walk goal, monthly outcome (free or owed), and settlement status. These records are used solely to operate the subscription feature.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>Data retention</h2>
+      <p>Information stored locally on your device remains there until you delete it, remove the app, or overwrite it through normal app use. Information stored through Apple's platform services may remain available until deleted from the relevant service, subject to Apple's retention practices and your account settings.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>Your choices and controls</h2>
+      <p>You can update certain profile and settings information in the app. You can also revoke location and notification permissions at any time in iOS Settings. If you no longer want to use social features, you can remove linked partners and stop using iCloud-based features.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>Children's privacy</h2>
+      <p>Aurora – Morning Miles is not directed to children under 13, and we do not knowingly collect personal information from children under 13 through the app.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>Changes to this policy</h2>
+      <p>We may update this Privacy Policy from time to time. When we do, we will update the "Last updated" date shown in the app. Your continued use of the app after an update means you accept the revised policy.</p>
+    </div>
+
+  </div>
+
+  <footer>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="mailto:alexsheena95@gmail.com">Contact</a>
+    </div>
+    <p>&copy; 2026 Aurora – Morning Miles. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
