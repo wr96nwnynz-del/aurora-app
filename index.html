@@ -262,10 +262,57 @@
     footer .footer-links a:hover { color: var(--white); }
     footer p { font-size: 13px; }
 
+    /* ── SCREENSHOTS ── */
+    .screenshots-section { background: var(--surface); }
+    .screenshots-scroll {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      margin-top: 0;
+    }
+    .screenshot-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+    .phone-frame {
+      position: relative;
+      width: 100%;
+      max-width: 220px;
+      border-radius: 36px;
+      overflow: hidden;
+      box-shadow:
+        0 0 0 8px #1C1C1E,
+        0 0 0 10px #3A3A3C,
+        0 24px 60px rgba(0,0,0,0.22);
+      aspect-ratio: 9/19.5;
+      background: #000;
+    }
+    .phone-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .screenshot-caption {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text2);
+      text-align: center;
+      letter-spacing: -0.1px;
+    }
+
     /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .screenshots-scroll { grid-template-columns: repeat(3, 1fr); gap: 16px; }
+      .phone-frame { border-radius: 24px; box-shadow: 0 0 0 5px #1C1C1E, 0 0 0 7px #3A3A3C, 0 16px 40px rgba(0,0,0,0.2); }
+    }
     @media (max-width: 600px) {
       .commitment-block { padding: 36px 28px; }
       .nav-links { display: none; }
+      .screenshots-scroll { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+      .phone-frame { border-radius: 20px; }
     }
   </style>
 </head>
@@ -275,6 +322,7 @@
     <a href="/" class="nav-logo">Aurora</a>
     <div class="nav-links">
       <a href="#features">Features</a>
+      <a href="#screenshots">Screenshots</a>
       <a href="#how-it-works">How it works</a>
       <a href="privacy.html">Privacy</a>
       <a href="terms.html">Terms</a>
@@ -327,6 +375,54 @@
           <span class="feature-icon">⏰</span>
           <h3>Morning Reminders</h3>
           <p>Set your target walk time and Aurora will remind you every morning — personalized to when you want to head out.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREENSHOTS -->
+  <section id="screenshots" class="screenshots-section">
+    <div class="container">
+      <p class="section-label">See it in action</p>
+      <h2 class="section-heading">Every feature, right in<br>your pocket</h2>
+      <p class="section-sub" style="margin-bottom: 48px;">Real screenshots from the app — built for your morning, every morning.</p>
+
+      <div class="screenshots-scroll">
+        <div class="screenshot-item">
+          <div class="phone-frame">
+            <img src="images/screenshots/walk-home.png" alt="Aurora walk screen with map" loading="lazy" />
+          </div>
+          <span class="screenshot-caption">Start your walk</span>
+        </div>
+        <div class="screenshot-item">
+          <div class="phone-frame">
+            <img src="images/screenshots/walk-in-progress.png" alt="Walk in progress with live stats" loading="lazy" />
+          </div>
+          <span class="screenshot-caption">Live route &amp; stats</span>
+        </div>
+        <div class="screenshot-item">
+          <div class="phone-frame">
+            <img src="images/screenshots/streaks.png" alt="Streaks and points dashboard" loading="lazy" />
+          </div>
+          <span class="screenshot-caption">Track your streak</span>
+        </div>
+        <div class="screenshot-item">
+          <div class="phone-frame">
+            <img src="images/screenshots/leaderboard.png" alt="Friends leaderboard ranked by points" loading="lazy" />
+          </div>
+          <span class="screenshot-caption">Compete with friends</span>
+        </div>
+        <div class="screenshot-item">
+          <div class="phone-frame">
+            <img src="images/screenshots/social.png" alt="Social accountability partners" loading="lazy" />
+          </div>
+          <span class="screenshot-caption">Accountability partners</span>
+        </div>
+        <div class="screenshot-item">
+          <div class="phone-frame">
+            <img src="images/screenshots/rewards.png" alt="Rewards catalog and redemption" loading="lazy" />
+          </div>
+          <span class="screenshot-caption">Earn real rewards</span>
         </div>
       </div>
     </div>
